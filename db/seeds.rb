@@ -12,6 +12,8 @@
 #
 # Location.create({name: "New York Stock Exchange", x_lon: 40.706866, y_lat: -74.011319, street: "11 Wall St", city: "New York", state: "NY", zip: "10005"}).categories << Category.all
 
+
+
 # restaurants
 restaurant = Category.create(name: "Food")
 bar = Category.create(name: "Bars")

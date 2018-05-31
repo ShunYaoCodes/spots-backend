@@ -1,3 +1,8 @@
+require 'net/http'
+require 'open-uri'
+require_relative 'key.rb'
+
+
 class Api::V1::LocationsController < ApplicationController
   def index
     locations = Location.all
@@ -9,10 +14,20 @@ class Api::V1::LocationsController < ApplicationController
     render json: location
   end
 
+
+  def search
+    query = params['query']
+    url = URI.parse("https://maps.googleapis.com/maps/api/place/textsearch/json?query=#{query}&key=INSERTAPIKEY KHFLSDJFHLKSJAHGHULKJHAFSLNLKJFASBJKAGSF)HEUGBLJ:ABVILHBJ:VICUOYHI:BJVIPUOCTVYPY*GPIUOHGUPIYF*Y")
+    req = Net::HTTP::Get.new(url.to_s)
+    resposne = open(url).read
+    render json: resposne
+  end
+
   def show
     location = Location.find(params[:id])
     render json: location
   end
+
 
   private
   def location_params

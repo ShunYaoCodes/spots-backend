@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
+      get '/search/:query', to: 'locations#search'
       resources :locations, only: [:index, :create, :show]
       resources :location_categories, only: [:index]
       resources :categories, only: [:index, :create, :show]
