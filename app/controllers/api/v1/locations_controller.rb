@@ -1,6 +1,5 @@
 require 'net/http'
 require 'open-uri'
-require_relative 'key.rb'
 
 
 class Api::V1::LocationsController < ApplicationController
@@ -17,7 +16,7 @@ class Api::V1::LocationsController < ApplicationController
 
   def search
     query = params['query']
-    url = URI.parse("https://maps.googleapis.com/maps/api/place/textsearch/json?query=#{query}&key=INSERTAPIKEY KHFLSDJFHLKSJAHGHULKJHAFSLNLKJFASBJKAGSF)HEUGBLJ:ABVILHBJ:VICUOYHI:BJVIPUOCTVYPY*GPIUOHGUPIYF*Y")
+    url = URI.parse("https://maps.googleapis.com/maps/api/place/textsearch/json?query=#{query}&key=#{Rails.application.secrets.apikey}")
     req = Net::HTTP::Get.new(url.to_s)
     resposne = open(url).read
     render json: resposne
