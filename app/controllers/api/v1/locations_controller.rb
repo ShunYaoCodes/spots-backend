@@ -9,8 +9,10 @@ class Api::V1::LocationsController < ApplicationController
   end
 
   def create
-    location = Location.find_or_create_by(location_params)
-    render json: location
+    @location = Location.find_or_create_by(location_params)
+    @location.categories << params[:categories].map { |cat| Category.find_or_create_by(name: cat)}
+    
+    render json: @location
   end
 
 
