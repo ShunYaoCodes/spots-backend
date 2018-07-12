@@ -1,24 +1,22 @@
-# README
+## Spots - Backend
+Spots is an app that helps people meet up at a central location. Simply enter your location and the locations of your friends and click a destination category. Spots will calculate the average point between your group and find the closest restaurant, bar or movie theater. In addition users can add new destinations to their spots database using the google places API. This Repo is a Rails backend that supports the user facing javascript web app.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Build status
+Check workingDemo branch for current working version
 
-Things you may want to cover:
+## Screenshots
+<img src="spotsApp.png" alt="spots app img">
 
-* Ruby version
+## Installation
+<code>
+git clone https://github.com/LaneMiller/Spots
+bundle install
+rails s
+</code>
 
-* System dependencies
+## Credits
+Built by
+Lane Miller, Shun Yao, and Jesse Horwitz
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## License
+MIT ©
