@@ -8,15 +8,15 @@ Check workingDemo branch for current working version
 <img src="spotsApp.png" alt="spots app img">
 
 ## Installation
-<code>
-git clone https://github.com/LaneMiller/Spots
-bundle install
-rails s
-</code>
+
+<code>git clone https://github.com/rainANDshine/spots-backend</code>
+<code>bundle install</code>
+<code>rails s</code>
+
 
 ## Credits
 Built by
-Lane Miller, Shun Yao, and Jesse Horwitz
+[Lane Miller](https://github.com/LaneMiller), [Shun Yao](https://github.com/rainANDshine), and [Jesse Horwitz](https://github.com/SuperJesseH)
 
 ## License
 MIT ©
