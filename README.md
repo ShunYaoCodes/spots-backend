@@ -10,16 +10,13 @@ Spots is an app that helps people meet up at a central location. Simply click to
 Master
 
 ## Installation
-<code>git clone https://github.com/rainANDshine/spots</code>
+1. git clone https://github.com/rainANDshine/spots
 
-Create a **secrets.yml** file in the **config** folder, and write:
-<code>development:</code>
+2. Create a **secrets.yml** file in the **config** folder, and write: <code>development: apikey: *your own Google API key*</code>
 
-<code>  apikey: *your own Google API key*</code>
+3. bundle
 
-<code>bundle</code>
-
-<code>rails s</code>
+4. rails s
 
 ## Credits
 Built by [Lane Miller](https://github.com/LaneMiller), [Jesse Horwitz](https://github.com/SuperJesseH), and [Shun Yao](https://github.com/rainANDshine)
