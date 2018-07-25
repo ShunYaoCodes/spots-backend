@@ -1,7 +1,9 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.3.3'
+ruby '2.4.4'
+
+gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 
 gem 'active_model_serializers'
 
